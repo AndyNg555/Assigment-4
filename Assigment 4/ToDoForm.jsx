@@ -9,14 +9,14 @@ export default function ToDoForm({ addTask }) {
       <TextInput
         style={styles.input}
         placeholder="Add a new task..."
-        onChangeText={(text) => setTaskText(text)} // Update taskText state
+        onChangeText={(text) => setTaskText(text)}
         value={taskText}
       />
       <Button
         title="Add Task"
         onPress={() => {
-          addTask(taskText); // Call addTask with the current taskText
-          setTaskText(''); // Clear the input field after adding the task
+          addTask(taskText);
+          setTaskText('');
         }}
       />
     </View>
